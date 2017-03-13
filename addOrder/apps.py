@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class AddequipConfig(AppConfig):
-    name = 'addequip'
+    name = 'addOrder'
