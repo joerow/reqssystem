@@ -5,5 +5,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-def indexy(request):
-    return HttpResponse("<h2>How about that?")
+def index(request):
+    return HttpResponse("<h2>fuck i forgot everything</h2>")
