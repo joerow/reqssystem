@@ -21,4 +21,11 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^addOrder/', include('addOrder.urls')),
     url(r'^index/', include('index.urls')),
+    url(r'catalog/', include('catalog.urls')),
+]
+
+#Add URL maps to redirect the base URL to our application
+from django.views.generic import RedirectView
+urlpatterns += [
+    url(r'^$', RedirectView.as_view(url='/catalog/', permanent=True)),
 ]
